@@ -128,30 +128,30 @@ nav ul li:hover{
 }
 @keyframes slide{
     0%{
-        background-image: url(/images/curtain-home.jpg);
+        background-image: url(../images/try-1.webp);
     }
     20%{
-        background-image: url(/images/curtain-home.jpg);
+        background-image: url(../images/curtain-home.jpg);
     }
     /* 20.1%{
         background-image: url(/images/try-1.webp);
     } */
     40.%{
-        background-image: url(/images/try-1.webp);
+        background-image: url(../images/try-1.webp);
     }
     
     /* 40.1%{
         background-image: url(/images/blind-background.jpg);
     } */
     60%{
-        background-image: url(/images/blind-background.jpg);
+        background-image: url(../images/blind-background.jpg);
     }
     
     /* 60.1%{
         background-image: url(/images/blinders.jpg);
     } */
     80%{
-        background-image: url(/images/blinders.jpg);
+        background-image: url(../images/blinders.jpg);
     }
 /*     
     80.1%{
@@ -159,7 +159,7 @@ nav ul li:hover{
     } */
 
     100%{
-        background-image: url(/images/jordan-graff-RisYDr-SA0A-unsplash.jpg);
+        background-image: url(../images/jordan-graff-RisYDr-SA0A-unsplash.jpg);
     }
     
    
@@ -220,7 +220,7 @@ width: 30%;
 
 .products{
     height: 100%;
-    background-image: url(/images/blind-background.jpg);
+    background-image: url(../images/blind-background.jpg);
     background-attachment: fixed;
     background-position: 50% 25%;
    background-size: 100% 120%;
@@ -371,7 +371,7 @@ width: 30%;
     height: 100%;
     width: 100%;
     padding: 50px 0;
-    background-image: url(/images/product-info-background.jpg);
+    background-image: url(../images/product-info-background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -496,7 +496,7 @@ width: 30%;
     align-items: center;
     position: relative;
     min-height: 100vh;
-    background-image: url(/images/product-info-background.jpg);
+    background-image: url(../images/product-info-background.jpg);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -673,7 +673,7 @@ width: 30%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(/images/product-info-background.jpg);
+    background-image: url(../images/product-info-background.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
