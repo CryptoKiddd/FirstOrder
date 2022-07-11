@@ -437,6 +437,7 @@ img{
     width: 300px;
     height: 300px;
     transition: 750ms ease;
+    padding: 20px 0px;
 }
 .prodcuts-info-curtain-img:hover{
     transform: scale(110%);
@@ -454,7 +455,7 @@ img{
 }
 .curtains-left-p{
     width: 30%;
-    height: 200px;
+    height: 300px;
    padding: 50px;
    text-align: center ;
     

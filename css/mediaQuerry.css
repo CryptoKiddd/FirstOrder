@@ -5,6 +5,16 @@
     
 }
 @media only screen and  (max-width: 568px){
+    .products-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .boxes-wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
     .card{
      width: 90%;
     }
