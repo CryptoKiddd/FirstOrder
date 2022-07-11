@@ -2,6 +2,7 @@
 body{
 
     font-family: 'Montserrat';
+    content-visibility: auto;
   
     scroll-behavior: smooth;
  
@@ -38,7 +39,7 @@ img{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
+    content-visibility: auto;
 }
 
 
@@ -179,16 +180,7 @@ img{
 
 
 
-.slider{
-    width: 100%;
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    animation: slide 20s infinite linear;
-    position: relative;
-}
+
 .header-content{
     color: white;
     text-align: center;
@@ -225,6 +217,7 @@ img{
     background-position: 50% 25%;
    background-size: 100% 120%;
     background-repeat: no-repeat;
+    content-visibility: auto;
   
     
 }
@@ -394,6 +387,7 @@ img{
     background-attachment: fixed;
     color: white;
     position: relative;
+    content-visibility: auto;
 }
 .products-info-wrapper{
     display: flex;
@@ -519,6 +513,7 @@ img{
     background-position: bottom;
     background-attachment: fixed;
     padding: 50px 0;
+    content-visibility: auto;
     
 
 }
