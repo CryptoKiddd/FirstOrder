@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="smooth-wrapper">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +13,8 @@
 
     <title>Intex</title>
 </head>
-<body>
-    <section class="hero-section">
+<body  id="smooth-content" >
+    <section class="hero-section"  >
         <div class="overlay"></div>
         <div class="navigation">
             <ul>
@@ -35,7 +35,7 @@
                     </a>
                 </li>
                 <li class="list" >
-                    <a href="#pdf">
+                    <a href="#pdf" id="scroll-pdf" >
                         <span class="icon">
                             <ion-icon name="folder-outline"></ion-icon>
                         </span>
@@ -85,7 +85,7 @@
     </section>
 
 
-    <section class="products-info" id="product" >
+    <section class="products-info"  >
         <div class="products-info-wrapper">
             <div class="overlay"></div>
             <div class="products-info-header">
@@ -102,7 +102,7 @@
                    <i class="fa-solid fa-arrow-down"></i>
                 </div>
                 <div class="prodcuts-info-curtain-img">
-                    <a href="curtains.html"><img src="images/luka-farda2.png" alt="">
+                    <a href="curtains.html"><img loading="lazy" src="images/luka-farda2.png" alt="">
                         </a>
                     
 
@@ -129,7 +129,7 @@
                     </ul>
                 </div>
                 <div class="prodcuts-info-curtain-img">
-                    <img src="images/luka-jaluzi.png" alt="">
+                    <img loading="lazy" src="images/luka-jaluzi.png" alt="">
 
                 </div>
                
@@ -157,7 +157,7 @@
             <div class="boxes-wrapper">
                 <div class="curtains">
                     <div class="curtains-box-img">
-                        <img class="product-box-image" src="images/curtain-box.jpg" alt="">
+                        <img loading="lazy" class="product-box-image" src="images/curtain-box.jpg" alt="">
                         
                             <h3 class="catalog-h3">Curtains</h3>
         
@@ -175,7 +175,7 @@
         
                 <div class="blinders">
                     <div class="blinders-box-img">
-                        <img class="product-box-image" src="images/blinders.jpg" alt="">
+                        <img loading="lazy" class="product-box-image" src="images/blinders.jpg" alt="">
                         <h3 class="catalog-h3"> Blinds </h3>
         
                     </div>
@@ -223,7 +223,7 @@
             <div class="card">
                 <div class="design"><h4>Design</h4></div>
                 <div class="imgbox">
-                    <img src="images/creativity.png" alt="">
+                    <img loading="lazy" src="images/creativity.png" alt="">
                 </div>
                 <div class="content">
                     
@@ -234,7 +234,7 @@
             <div class="card">
                 <div class="design"><h4>Consultations</h4></div>
                 <div class="imgbox">
-                    <img src="images/consulting.png" alt="">
+                    <img loading="lazy" src="images/consulting.png" alt="">
                 </div>
                 <div class="content">
                    
@@ -245,7 +245,7 @@
             <div class="card">
                 <div class="design"><h4>Instalattion</h4></div>
                 <div class="imgbox">
-                    <img src="images/maintenance.png" alt="">
+                    <img loading="lazy" src="images/maintenance.png" alt="">
                 </div>
                 <div class="content">
                   
@@ -256,7 +256,7 @@
             <div class="card">
                 <div class="design"><h4>Sewing</h4></div>
                 <div class="imgbox">
-                    <img src="images/sewing-machine.png" alt="">
+                    <img loading="lazy" src="images/sewing-machine.png" alt="">
                 </div>
                 <div class="content">
                   
@@ -333,6 +333,7 @@
 
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="index.js"></script>
