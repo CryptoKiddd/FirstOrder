@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Montserrat:wght@300;400;600;700;800&family=Poppins:wght@500;700&display=swap');
+html:focus-within{
+    scroll-behavior: smooth!important;
+}
 body{
 
     font-family: 'Montserrat';
     content-visibility: auto;
   
-    scroll-behavior: smooth;
+    
  
 }
 :root{
     --clr: #222327;
+}
+.container-for-scroll{
+
+  
 }
 .overlay{
     position: absolute;
