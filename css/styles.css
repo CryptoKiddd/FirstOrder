@@ -807,6 +807,44 @@ img{
 .contact-box a{
     color: white;
 }
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    background: #274d36;
+    color: white;
+}
+footer a{
+  color: white;
+}
+footer a:hover{
+    color: red;
+}
+footer li{
+    list-style: none;
+}
+footer li h3{
+    list-style: none;
+    margin-bottom: 5px;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+   
+    gap: 10px;
+}
+footer  p{
+    margin-bottom:15px;
+    font-size: 20px;
+}
+.follow-us li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: center;
+}
 
 
 

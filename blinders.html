@@ -5,143 +5,22 @@
     <title>Intex Curtains</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
     <link rel="stylesheet" href="css/styles.css">
 
-    
-    <style>
-
-      html,
-      body {
-        position: relative;
-        margin: 0;
-        padding: 0;
-      }
-      .indicator::before{
-    content: '';
-    position: absolute;
-    background-color:red;
-    width: 20px;
-    height: 20px;
-    top:53.5%;
-    left: -18.3px;
-    background: transparent;
-    border-top-right-radius: 20px;
-
-    box-shadow: 0px -7px 0 0  #33374b;
-
-}
-.indicator::after{
-    content: '';
-    position: absolute;
-    background-color:red;
-    width: 20px;
-    height: 20px;
-    top:53.5%;
-    right: -18.3px;
-    background: transparent;
-    border-top-left-radius: 20px;
-
-    box-shadow: 0px -7px 0 0  #33374b;
-
-}
-.index-curtains-header{
-  text-align: center;
-  padding: 20px;
-
-
-}
+    <link rel="stylesheet" href="css/blinders.css">
 
 
 
-      .wrapper {
-        background-color:  #33374b;
-;
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-     
-        color: rgb(255, 255, 255);
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
 
-      .swiper {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        height: 70vh;
-      }
-
-      .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: 300px;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-      }
-      h2 {
-        font-size: 40px;
-        letter-spacing: 4px;
-        background: rgb(116, 179, 221);
-        width: 100%;
-        padding-left:20px;
-      }
-      h1 {
-        font-size: 55px;
-        
-      }
-      .curtain-nav{
-        background-color:rgba(255, 255, 255, 0.719);
-        border: none;
-        width: 100%;
-        border-radius: 0;
-        box-shadow: 0px 10px 10px 4px rgba(159, 158, 190, 0.384);
-      }
-      .text{
-        color:rgb(255, 255, 255);
-        z-index: 1;
-      }
-      .b{
-       border:6px solid   #33374b;
-       box-shadow:none;
-     
-       top:-60%
-      }
-      .navigation li.active .icon{
-    transform: translate(6px,-36px);
-    color: rgb(54, 180, 38);
-  
-
-}
-
-.i{
-  font-size: 65px;
-  animation: move 2.5s infinite ease-in-out;
-
-}
-@keyframes move{
-  
-  0%{transform: translateY(0px);}
-  50%{transform: translateY(-25px);}
-  100%{transform: translateY(0px);}
-}
-
-    </style>
   </head>
 
   <body>
 
-    <div class="wrapper">
-      <div class="navigation curtain-nav">
+<div class="wrapper">
+        <div class="navigation curtain-nav">
         <ul>
             <li  class="list active" >
                 <a href="index.html">
@@ -193,131 +72,91 @@
             </li>
             <div style=" background-color: #72c4dd;" class="indicator b"></div>
         </ul>
-        
-      
-    </div>
-   
-        <!-- Swiper -->
+        </div>
         <div class="index-curtains-header">
           <h1>Blinders <br>Collections </h1>
           <ion-icon class="i" name="arrow-down-outline"></ion-icon>
 
         </div>
-    
-    <h2>Roman Blinders</h2>
-    <div style="background-color: rgb(228, 214, 92);" class="swiper mySwiper">
-      <div  id="roman-blind" class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-          <div>
-            <span></span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
+</div>
+<div class="cloths" >
+  <a href="blinds-cloths/plisse.html">
+    <div class="plisse-cloth box-cloth">
+      <p>Plisse</p>
     </div>
-
-    <h2>Venetian Blinders </h2>
-    <div id="venetian-blind" style="background-color: rgb(241, 231, 141);" class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
+  </a>
+  <a href="blinds-cloths/zebra.html">
+    <div class="zebra-cloth box-cloth">
+      <p>Horizontal</p>
     </div>
-
-
-    <h2>Roller Blinders </h2>
-    <div style="background-color: rgb(241, 231, 141);" class="swiper mySwiper">
-      <div id="roler-blind" class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-          <p>27887</p>
-
-        
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
+  </a>
+  <a href="blinds-cloths/gofre.html">
+    <div class="gofre-cloth box-cloth">
+      <p>Gofre</p>
     </div>
-
-    
+  </a>
+  <a href="blinds-cloths/mirage.html">
+    <div class="mirage-cloth box-cloth">
+      <p>Mirage</p>
+    </div>
+  </a>
   
+  <a href="blinds-cloths/wood.html">
+    <div class="roll-cloth box-cloth">
+      <p>Wood</p>
+    </div>
+  </a>
+ <a href="blinds-cloths/vertical.html">
+  <div class="vertical-cloth box-cloth">
+    <p>Plastic<br>& <br> <span>Aluminium</span> </p>
+  </div>
+ </a>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</div>
+<footer>
+  <div class="quick-links">
+      <p>Quick Links</p>
+      <ul>
+          <li> <a href="index.html">Home</a></li>
+          <li> <a href="curtains.html">Curtains</a></li>
+          <li> <a href="blinders.html">Blinders</a></li>
+          <li> <a href="index.html#contacts">Contacts</a></li>
+          
+      </ul>
+
+  </div>
+ <div class="follow-us">
+  <p>Follow us</p>
+  <ul>
+      <li><a href="">Facebook <ion-icon name="logo-facebook"></ion-icon></a></li>
+      <li><a href="">Istagram <ion-icon name="logo-instagram"></ion-icon></a></li>
+  </ul>
+ </div>
+ <div class="contact-footer" >
+  <p>Contact Us</p>
+  <ul>
+      <li>
+          <h3>Email</h3>
+          <a href="mailto:intexNew@gmail.com">intexNew@gmail.com</a>
+      </li>
+      <li>
+          <h3>Phone</h3>
+          <a href="callto:598987213">598-987-213 </a>
+      </li>
+      <li>
+          <h3>Address</h3>
+          <p>Lorem ipsum dolor</p>
+      </li>
+  
+  </ul>
+ </div>
+ 
+
+</footer>
+
+    
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
