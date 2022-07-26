@@ -1,17 +1,11 @@
+const menuBtn = document.getElementById('menu')
+const menuContent = document.getElementById('menu-content')
 
-const list = document.querySelectorAll('.list');
+menuBtn.addEventListener('click',()=>{
+   menuContent.classList.toggle('activelinks')
+        
 
-console.log(list)
-function addClass(){
-    list.forEach((item)=>{
-        item.classList.remove('active');
-        this.classList.add('active')
-    })
-}
-
-
-
-list.forEach((item)=>item.addEventListener('mouseover',addClass));
+})
 
 
 

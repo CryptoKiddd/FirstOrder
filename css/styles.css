@@ -10,25 +10,148 @@ body{
     
  
 }
-:root{
-    --clr: #222327;
-}
-.container-for-scroll{
 
-  
-}
+
 .overlay{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: rgba(0, 0, 0, 0.267);
  
 }
 img{
     width: 100%;
     height: 100%;
+}
+.navigation{
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    height: 70px;
+    background-color: #1b1b1b;
+    letter-spacing: 1px;
+}
+.logo{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    
+    
+}
+ nav a{text-decoration: none;
+    color: white;
+}
+.links li{
+    position: relative;
+    padding: 0px 15px;
+    background: transparent;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.links li:hover{
+    box-shadow: 0px 0px 5px 2px rgb(102, 179, 214);
+}
+.fa-bars{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    right: 20px;
+    display: none;
+}
+.products-dropdown{
+    position: absolute;
+    width: 100%;
+    background:  #1b1b1b;
+    visibility: hidden;
+    opacity: 0;
+    list-style: none;
+    top:110%;
+    left: 0;
+    transition: 500ms ease-in-out;
+}
+.products-dropdown li{
+    padding: 9px 15px;
+    
+    
+    background-color: #1b1b1b;
+}
+.to-show-dropdown{
+    transition: 250ms ease;
+}
+
+.to-show-dropdown:hover .products-dropdown {
+    visibility: inherit;
+    opacity: 1;
+
+}
+@media (max-width:922px){
+
+    .fa-bars{
+        display: block;
+        cursor: pointer;
+    }
+    .links li{
+        width: 100%;
+       padding: 20px;
+        text-align: center;
+    }
+    .links{
+        position: absolute;
+        right: 0;
+       padding:10px 0;
+        width: 80%;
+        height:calc(80vh - 70px) ;
+        flex-direction: column;
+        align-items: center;
+       
+        
+        
+        background:#1b1b1b;
+        top: 100%;
+        display: none;
+    }
+    .activelinks{
+        display: block;
+    }
+    .to-show-dropdown{
+        transition: 250ms ease;
+       
+    }
+    .to-show-dropdown li {
+    
+    padding: 10px 0px;
+    margin: 5px auto;
+    width: 50%;
+    right: 0;
+   
+   
+   
+    }
+    .to-show-dropdown li a{
+        font-size: 15px;
+
+    }
+    
+    .to-show-dropdown:hover{
+       margin-bottom: 80px;
+        
+    }
+    .products-dropdown{
+        top: 100%;
+    }
 }
 
 
@@ -36,6 +159,7 @@ img{
 .hero-section{
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
     /* justify-content: center; */
     gap: 150px;
@@ -46,166 +170,17 @@ img{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    content-visibility: auto;
-}
-
-
-
-.navigation{
-    margin-top: 50px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    border-bottom: 2px solid  rgba(69, 233, 47, 0.295);
-    width: 70%;
-    height: 70px;
-    /* border-radius: 100%; */
-    
-    
-   
-   
-
-
- 
-    box-shadow: 0px 4px 5px 0px rgba(69, 233, 47, 0.555);
-    z-index: 2;
-    /* background: transparent; */
-
-
-}
-.navigation ul{
-    display: flex;
-    
-    width: 350px;
-
-
-}
-.navigation ul li{
-    position: relative;
-    width: 70px;
-    height: 70px;
-    z-index: 1;
-    list-style: none;
-
-}
-.navigation ul li a{
-    text-decoration: none;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-    
-}
-.navigation .icon{
-    position: relative;
-    display: block;
-    font-size: 1.75em;
-    text-align: center;
-    line-height: 75px;
-    transition: 0.5s;
-    color: rgb(84, 219, 66);
-    font-weight: 700;
-}
-.navigation li.active .icon{
-    transform: translate(2px,-33px);
-    /* color: rgb(255, 255, 255); */
   
-
 }
-.navigation .text{
-    position: absolute;
-    color: rgb(221, 214, 214);
-    font-weight: 600;
-    font-size: 1em;
-    transition: 0.5s;
-    transform: translateY(20px);
-    opacity: 0;
-}
-.navigation li.active .text{
-    opacity: 1;
-   
-    transform: translateY(5px);
-
-
-}
-.indicator{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-   
-    background: transparent;
-    top: -50%;
-    border-radius: 50%;
-    border: 1px solid rgb(255, 255, 255);
-    transition: 0.5s;
-    box-shadow: 0px 0px 10px 4px rgba(255, 255, 255, 0.432);
-  
-
-
-}
-/* .indicator::before{
-    content: '';
-    position: absolute;
- 
-    width: 20px;
-    height: 20px;
-    top:60%;
-    left: -17.3px;
-    background:transparent;
-    border-top-right-radius: 20px;
-
-    box-shadow: 0px -7px 0 0 rgba(15, 8, 8, 0.295);
-
-}
-.indicator::after{
-    content: '';
-    position: absolute;
-    background-color:red;
-    width: 20px;
-    height: 20px;
-    top:60%;
-    right: -18.3px;
-    background: rgba(15, 8, 8, 0.295);
-    border-top-left-radius: 20px;
-
-    box-shadow: 0px -7px 0 0 rgba(15, 8, 8, 0.295);
-
-} */
-.navigation li:nth-child(1).active ~ .indicator{
-    transform: translateX(calc(58px * 0));
-}
-.navigation li:nth-child(2).active ~ .indicator{
-    transform: translateX(calc(58px * 1));
-}
-.navigation li:nth-child(3).active ~ .indicator{
-    transform: translateX(calc(58px * 2));
-}
-.navigation li:nth-child(4).active ~ .indicator{
-    transform: translateX(calc(58px * 3));
-}
-.navigation li:nth-child(5).active ~ .indicator{
-    transform: translateX(calc(58px * 4));
-}
-.navigation li:nth-child(6).active ~ .indicator{
-    transform: translateX(calc(58px * 5));
-}
-
-
-
-
 
 
 .header-content{
     color: white;
     text-align: center;
     z-index: 1;
-    margin-top: 15px;
+    position: absolute;
+    bottom: 20%;
+
 }
 .principal h1{
     font-size: 45px;
@@ -811,10 +786,13 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     flex-wrap: wrap;
     min-height: 50vh;
-    background: #274d36;
+    background: #1b1b1b;
     color: white;
+    
+  
 }
 footer a{
   color: white;
