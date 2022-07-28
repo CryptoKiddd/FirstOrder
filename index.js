@@ -112,6 +112,18 @@ const pdfButton = document.getElementById('#scroll-pdf')
 
 
 
+//languagess
+const ru = document.getElementById('ru')
+const ruplise = document.getElementById('plise-text')
+ru.addEventListener('click',()=>{
+    console.log(ruplise)
+    ruplise.textContent='rusulad gadaiqca'
+})
+
+
+
+
+
 
 
 
